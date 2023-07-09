@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Engraçado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    #guess-input {
+      margin-top: 20px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    #challenge {
+      margin-top: 30px;
+    }
+
+    #countdown {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    #restart-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jogo Engraçado</h1>
+  <p>Tente adivinhar o número secreto!</p>
+  <input type="number" id="guess-input" placeholder="Digite seu palpite">
+  <button onclick="guessNumber()">Enviar</button>
+  <p id="result"></p>
+  <p id="challenge"></p>
+  <p id="countdown"></p>
+  <button id="restart-button" onclick="restartGame()">Reiniciar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
